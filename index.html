@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr Prajwal Ghimire (@prazg) — Central Open-Science &amp; Clinical AI Observatory</title>
+  <meta
+    name="description"
+    content="Central Open-Science &amp; Clinical AI Observatory by Dr Prajwal Ghimire (The Francis Crick Institute, King's College London, King's College Hospital, NAAMII Nepal): 10 live neurosurgery, neuroimaging, oncology &amp; pathology AI web apps, 99 curated open foundation models, radiogenomics frameworks, and multi-hazard portals."
+  />
+  <meta name="author" content="Dr Prajwal Ghimire" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dr Prajwal Ghimire (@prazg) — Central Open-Science &amp; Clinical AI Observatory" />
+  <meta
+    property="og:description"
+    content="10 live browser-local &amp; GPU-ready neurosurgery, neuroimaging, oncology &amp; pathology AI web apps, 99 curated open foundation models, 44 indexed neuro datasets, GBM radiogenomics frameworks, and Nepal open-science portals."
+  />
+  <meta property="og:url" content="https://prazg.github.io/" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070d18'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%2338bdf8' stroke-width='2'/%3E%3Cline x1='6' y1='16' x2='26' y2='16' stroke='%2310b981' stroke-width='1.6'/%3E%3Cline x1='16' y1='6' x2='16' y2='26' stroke='%2310b981' stroke-width='1.6'/%3E%3Ccircle cx='19' cy='13' r='2.5' fill='%23f472b6'/%3E%3C/svg%3E"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Cross-Site Top Ribbon (.prazg-suite-bar) -->
+  <nav id="suite-bar" class="prazg-suite-bar" aria-label="PrazG Open-Science Suite Navigation">
+    <div class="suite-bar-inner">
+      <a href="https://prazg.github.io/" class="suite-brand" aria-current="page">
+        <span class="suite-brand-dot" aria-hidden="true"></span>
+        <span>prazg.github.io · Central Observatory</span>
+      </a>
+
+      <div class="suite-nav-links">
+        <a class="suite-nav-link" href="#workflow-selector">Workflow Finder</a>
+        <a class="suite-nav-link" href="#neuro-suite">10-App Neuro &amp; AI Suite</a>
+        <a class="suite-nav-link" href="#radiogenomics">GBM Radiogenomics</a>
+        <a class="suite-nav-link" href="#nepal-observatory">Nepal Observatory</a>
+        <a class="suite-nav-link" href="#cite-export">Cite &amp; Export</a>
+      </div>
+
+      <div class="suite-bar-actions">
+        <details id="suite-apps-dropdown" class="suite-dropdown">
+          <summary class="suite-dropdown-summary">
+            <span>All Live Portals (15)</span>
+            <span aria-hidden="true">▾</span>
+          </summary>
+          <div class="suite-dropdown-panel">
+            <div class="suite-dropdown-group-label">Neuro, Neuroimaging &amp; Pathology AI (10)</div>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/neuroscope-rano/" target="_blank" rel="noopener noreferrer"><span>01 · NeuroScope-RANO</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/openneuroatlas/" target="_blank" rel="noopener noreferrer"><span>02 · OpenNeuroAtlas</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/cns5-audit/" target="_blank" rel="noopener noreferrer"><span>03 · CNS5-Audit</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/neurocorridor-3d/" target="_blank" rel="noopener noreferrer"><span>04 · NeuroCorridor-3D</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/3D_Neurosurgical_Atlas/" target="_blank" rel="noopener noreferrer"><span>05 · 3D Neurosurgical Atlas</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/brain_trials_finder/" target="_blank" rel="noopener noreferrer"><span>06 · Brain Trials Finder</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/Brain_Radiology_FM_Portal/" target="_blank" rel="noopener noreferrer"><span>07 · Brain Radiology FM Portal</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/Histology_FM_Portal/" target="_blank" rel="noopener noreferrer"><span>08 · Histology FM Portal</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/Animal_Pathology_FM_Portal/" target="_blank" rel="noopener noreferrer"><span>09 · Animal Pathology FM Portal</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/Remote_Dicom_Viewer/" target="_blank" rel="noopener noreferrer"><span>10 · Remote DICOM Viewer</span><span aria-hidden="true">↗</span></a>
+            <div class="suite-dropdown-group-label">Nepal Open-Science Portals (5)</div>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/Nepal_TRAYA/" target="_blank" rel="noopener noreferrer"><span>Nepal TRAYA</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/Nepal_Quake_Watch/" target="_blank" rel="noopener noreferrer"><span>Nepal Quake Watch</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/Nepal_Cryosphere_Inventory/" target="_blank" rel="noopener noreferrer"><span>Nepal Cryosphere Inventory</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/Nepal_Heritage_Catalogue/" target="_blank" rel="noopener noreferrer"><span>Nepal Heritage Catalogue</span><span aria-hidden="true">↗</span></a>
+            <a class="suite-dropdown-item" href="https://prazg.github.io/GLOF_dashboard/" target="_blank" rel="noopener noreferrer"><span>HMA GLOF Dashboard</span><span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+        <button
+          type="button"
+          id="theme-toggle"
+          class="theme-toggle-btn"
+          aria-pressed="false"
+          aria-label="Switch to light ivory-slate theme"
+        >
+          <span id="theme-toggle-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.5" />
+              <line x1="12" y1="2" x2="12" y2="4.5" />
+              <line x1="12" y1="19.5" x2="12" y2="22" />
+              <line x1="4.9" y1="4.9" x2="6.7" y2="6.7" />
+              <line x1="17.3" y1="17.3" x2="19.1" y2="19.1" />
+              <line x1="2" y1="12" x2="4.5" y2="12" />
+              <line x1="19.5" y1="12" x2="22" y2="12" />
+              <line x1="4.9" y1="19.1" x2="6.7" y2="17.3" />
+              <line x1="17.3" y1="6.7" x2="19.1" y2="4.9" />
+            </svg>
+          </span>
+          <span id="theme-toggle-label">Light Theme</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Editorial Scientific Observatory Masthead -->
+  <header id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-overline">
+            <span class="hero-overline-line" aria-hidden="true"></span>
+            <span>Central Open-Science &amp; Clinical AI Observatory · London, UK</span>
+          </div>
+
+          <h1 class="hero-title">
+            Dr Prajwal Ghimire
+            <span class="hero-handle">@prazg</span>
+          </h1>
+
+          <p class="hero-headline">
+            Neurosurgeon-Scientist · Cancer AI &amp; Radiogenomics Researcher
+          </p>
+
+          <ul class="affiliation-list" aria-label="Institutional affiliations">
+            <li class="affiliation-chip">
+              <strong>The Francis Crick Institute</strong> · Postdoctoral Researcher
+            </li>
+            <li class="affiliation-chip">
+              <strong>King's College London (KCL-BMEIS)</strong> · PhD in AI / Cancer Imaging / Radiogenomics
+            </li>
+            <li class="affiliation-chip">
+              <strong>King's College Hospital, London</strong> · Neurosurgery
+            </li>
+            <li class="affiliation-chip">
+              <strong>NAAMII Nepal</strong> · Scientist
+            </li>
+          </ul>
+
+          <p class="hero-lead">
+            Translational research ecosystem bridging microsurgical neuro-oncology, cancer radiogenomics,
+            zero-upload radiological &amp; stereotactic browser workbenches, and self-hosted radiology &amp;
+            computational pathology foundation models.
+          </p>
+
+          <!-- Primary Hero Action Pills -->
+          <div class="hero-actions" role="group" aria-label="Primary actions and academic links">
+            <a class="action-pill action-pill--primary" href="#neuro-suite">
+              <span>Explore 10-App Suite</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a
+              class="action-pill"
+              href="https://kclpure.kcl.ac.uk/portal/en/persons/prajwal-ghimire/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>KCL Pure Publications</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="action-pill"
+              href="https://kclpure.kcl.ac.uk/ws/portalfiles/portal/cv/b47f89d3-9947-4de3-957f-7c086e01768b?locale=en_GB"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>CV</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="action-pill"
+              href="https://linktr.ee/prazneuro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Linktree &amp; Articles</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="action-pill"
+              href="https://github.com/prazg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>GitHub @prazg</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="action-pill" href="mailto:prajwal.ghimire@crick.ac.uk">
+              <span>Contact</span>
+            </a>
+          </div>
+
+          <!-- Verified Academic & Social Channels -->
+          <div class="profile-social-strip" aria-label="Verified social and media profiles">
+            <span>Verified Channels:</span>
+            <a class="profile-social-link" href="https://linkedin.com/in/neuroPraz" target="_blank" rel="noopener noreferrer">LinkedIn (@neuroPraz)</a>
+            <a class="profile-social-link" href="https://twitter.com/prazNeuro" target="_blank" rel="noopener noreferrer">X / Twitter (@prazNeuro)</a>
+            <a class="profile-social-link" href="https://youtube.com/Dr.Prajwal.Ghimire" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a class="profile-social-link" href="https://instagram.com/dr.praz.neuro" target="_blank" rel="noopener noreferrer">Instagram (@dr.praz.neuro)</a>
+            <a class="profile-social-link" href="mailto:prajwal.ghimire@crick.ac.uk">prajwal.ghimire@crick.ac.uk</a>
+          </div>
+        </div>
+
+        <!-- Interactive Stereotactic Neural-Mesh Header Accent -->
+        <aside class="stereotactic-panel" aria-label="Stereotactic Neural-Mesh Observatory Visualization">
+          <div class="stereotactic-header">
+            <span>OBSERVATORY TELEMETRY</span>
+            <span class="stereotactic-status">
+              <span class="suite-brand-dot" aria-hidden="true"></span>
+              <span id="motion-status-label">MNI-152 Neural Mesh</span>
+            </span>
+          </div>
+
+          <div class="stereotactic-canvas-wrap">
+            <canvas id="stereotactic-canvas" width="520" height="256" aria-hidden="true"></canvas>
+          </div>
+
+          <div class="stereotactic-footer">
+            <span id="mni-telemetry">MNI152 · X:+14.2 Y:-22.8 Z:+38.5 mm</span>
+            <div class="mesh-legend" aria-hidden="true">
+              <span class="mesh-legend-item"><span class="legend-dot legend-dot--cyan"></span>Imaging</span>
+              <span class="mesh-legend-item"><span class="legend-dot legend-dot--emerald"></span>Surgery</span>
+              <span class="mesh-legend-item"><span class="legend-dot legend-dot--rose"></span>Pathology FM</span>
+              <span class="mesh-legend-item"><span class="legend-dot legend-dot--amber"></span>Benchmarks</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Live Ecosystem KPIs -->
+      <div id="kpi-grid" class="kpi-grid" role="region" aria-label="Ecosystem summary metrics">
+        <div class="kpi-card" data-accent="cyan">
+          <div class="kpi-value">10</div>
+          <div class="kpi-label">Live Clinical &amp; AI Web Apps</div>
+          <div class="kpi-detail">Neurosurgery, Neuroimaging, Oncology &amp; Pathology</div>
+        </div>
+        <div class="kpi-card" data-accent="rose">
+          <div class="kpi-value">99</div>
+          <div class="kpi-label">Curated Open Foundation Models</div>
+          <div class="kpi-detail">28 Brain Radiology · 55 Histology · 16 Animal Pathology</div>
+        </div>
+        <div class="kpi-card" data-accent="emerald">
+          <div class="kpi-value">44</div>
+          <div class="kpi-label">Indexed Neuro Datasets &amp; Benchmarks</div>
+          <div class="kpi-detail">OpenNeuroAtlas Modality × Pathology Observatory</div>
+        </div>
+        <div class="kpi-card" data-accent="amber">
+          <div class="kpi-value">100%</div>
+          <div class="kpi-label">Open-Source Code</div>
+          <div class="kpi-detail">Zero-Upload Browser Sandboxes &amp; Local GPU Runners</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Section 01: "Find the Right Tool" Interactive Workflow Selector -->
+    <section id="workflow-selector" class="portal-section" aria-labelledby="workflow-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">01 / Clinical &amp; Research Decision Router</div>
+            <h2 id="workflow-heading" class="section-title">Find the Right Tool for Your Workflow</h2>
+            <p class="section-subtitle">
+              Select a clinical, surgical, or computational research objective below to filter the suite and display a tailored workflow guide.
+            </p>
+          </div>
+        </div>
+
+        <div id="workflow-grid" class="workflow-grid" role="group" aria-label="Clinical and research workflow goals">
+          <!-- Populated interactively by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: 10-App Open Neuro, Neuroimaging & Pathology AI Suite Explorer -->
+    <section id="neuro-suite" class="portal-section" aria-labelledby="neuro-suite-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">02 / Flagship Interactive Web Applications</div>
+            <h2 id="neuro-suite-heading" class="section-title">
+              10-App Open Neuro, Neuroimaging &amp; Pathology AI Suite
+            </h2>
+            <p class="section-subtitle">
+              Privacy-first browser-local clinical research workbenches, 3D neurosurgical anatomy atlases, open dataset registries, and self-hosted GPU foundation model portals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tailored Workflow Recommendation Banner (revealed on goal selection) -->
+        <div id="workflow-recommendation-banner" class="workflow-banner" role="region" aria-live="polite" hidden>
+          <div class="workflow-banner-header">
+            <h3 class="workflow-banner-title">
+              <span class="workflow-banner-badge">Recommended Workflow</span>
+              <span id="workflow-banner-goal-name"></span>
+            </h3>
+            <button type="button" id="clear-workflow-btn" class="reset-filters-btn">
+              Show All 10 Apps ×
+            </button>
+          </div>
+          <p id="workflow-banner-tip" class="workflow-banner-tip"></p>
+          <div class="workflow-banner-actions">
+            <div id="workflow-banner-links" class="workflow-banner-links"></div>
+          </div>
+        </div>
+
+        <!-- Instant Search + Category & Runtime Filter Toolbar -->
+        <div class="explorer-toolbar" role="search" aria-label="Filter and search applications">
+          <div class="search-row">
+            <div class="search-input-wrap">
+              <label for="app-search" class="sr-only">
+                Search the 10 neuro, neuroimaging, and pathology AI applications
+              </label>
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="7.5" />
+                <line x1="20.5" y1="20.5" x2="16.4" y2="16.4" />
+              </svg>
+              <input
+                id="app-search"
+                class="search-input"
+                type="search"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="Search apps by modality, RANO, CNS5, NIfTI, DICOM, histology, Rhoton, trials…"
+              />
+              <div class="search-shortcut-hint">
+                <button type="button" id="clear-search-btn" class="clear-search-btn" hidden>
+                  Clear
+                </button>
+                <kbd class="kbd-badge" title="Press / to focus search, Escape to clear">/</kbd>
+              </div>
+            </div>
+
+            <div class="results-meta">
+              <span id="suite-results-count" aria-live="polite">Showing all 10 verified applications</span>
+              <button type="button" id="reset-all-filters-btn" class="reset-filters-btn" hidden>
+                Reset Filters
+              </button>
+            </div>
+          </div>
+
+          <div class="filter-rows">
+            <div class="filter-row">
+              <span class="filter-row-label" id="category-filter-label">Category</span>
+              <div
+                id="category-filter-group"
+                class="filter-row"
+                role="group"
+                aria-labelledby="category-filter-label"
+              >
+                <!-- Populated by js/app.js -->
+              </div>
+            </div>
+
+            <div class="filter-row">
+              <span class="filter-row-label" id="runtime-filter-label">Runtime</span>
+              <div
+                id="runtime-filter-group"
+                class="filter-row"
+                role="group"
+                aria-labelledby="runtime-filter-label"
+              >
+                <!-- Populated by js/app.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10-App Cards Grid (pre-populated for zero-CLS & static accessibility; enhanced by js/app.js) -->
+        <div id="apps-grid" class="apps-grid">
+          <article class="app-card" data-accent="cyan">
+            <div>
+              <h3 class="app-title">NeuroScope-RANO</h3>
+              <p class="app-summary">Multi-planar + 3D NIfTI-1 MRI workbench for BraTS tumor volumetrics, automated 2D RANO calipers, RANO-Resect (Karschnia 2023) EOR classification, longitudinal RANO 2.0 tracking, and AI segmentation QA (Dice, HD95, ASSD, 3D TP/FP/FN overlay).</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/neuroscope-rano/" target="_blank" rel="noopener noreferrer">Launch Live App →</a>
+              <a class="btn-repo" href="https://github.com/prazg/neuroscope-rano" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="app-card" data-accent="amber">
+            <div>
+              <h3 class="app-title">OpenNeuroAtlas</h3>
+              <p class="app-summary">Living observatory cataloging 44 verified open-access datasets, foundation models, clinical toolkits, and MICCAI challenges across neurosurgery, neuroimaging, and neuro-oncology, with interactive Modality x Pathology gap heatmaps, comparator, and BibTeX/PR builder.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/openneuroatlas/" target="_blank" rel="noopener noreferrer">Launch Live App →</a>
+              <a class="btn-repo" href="https://github.com/prazg/openneuroatlas" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="app-card" data-accent="cyan">
+            <div>
+              <h3 class="app-title">CNS5-Audit</h3>
+              <p class="app-summary">Integrated WHO CNS5 (2021) molecular-histological tumor classifier across 7 CNS tumor families, RANO 2.0 / RANO-BM / RANO-Resect calculators, and a 36-item CLAIM 2024 + TRIPOD+AI neuroimaging leakage auditor with Markdown/LaTeX/PDF export.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/cns5-audit/" target="_blank" rel="noopener noreferrer">Launch Live App →</a>
+              <a class="btn-repo" href="https://github.com/prazg/cns5-audit" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="app-card" data-accent="emerald">
+            <div>
+              <h3 class="app-title">NeuroCorridor-3D</h3>
+              <p class="app-summary">Interactive stereotactic MNI-152 sandbox with 11 eloquent/vascular structures, 10 white-matter fiber tracts (Anatomical &amp; DTI DEC RGB), 5 surgical cases, Probe's-Eye corridor fly-through, deterministic entry optimizer, local NIfTI overlay, and 10-question quiz.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/neurocorridor-3d/" target="_blank" rel="noopener noreferrer">Launch Live App →</a>
+              <a class="btn-repo" href="https://github.com/prazg/neurocorridor-3d" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="app-card" data-accent="emerald">
+            <div>
+              <h3 class="app-title">3D Neurosurgical Atlas</h3>
+              <p class="app-summary">Interactive browser-based 3D craniospinal anatomy &amp; neuro-oncological pathology teaching atlas featuring 29 GLB specimens (2,031 meshes), 76 step-by-step surgical approaches/syndromes/dissections, 12 MNI layers, and 102 Rhoton stereo plates.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/3D_Neurosurgical_Atlas/" target="_blank" rel="noopener noreferrer">Launch Live App →</a>
+              <a class="btn-repo" href="https://github.com/prazg/3D_Neurosurgical_Atlas" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="app-card" data-accent="amber">
+            <div>
+              <h3 class="app-title">Brain Trials Finder</h3>
+              <p class="app-summary">Discovers actively recruiting neuro-oncology clinical trials across ClinicalTrials.gov, ISRCTN, EU CTIS, and WHO ICTRP with explainable patient-fit heuristics, diagnosis presets, shortlist export, and printable clinic discussion sheets.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/brain_trials_finder/" target="_blank" rel="noopener noreferrer">Launch Live App →</a>
+              <a class="btn-repo" href="https://github.com/prazg/brain_trials_finder" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="app-card" data-accent="rose">
+            <div>
+              <h3 class="app-title">Brain Radiology FM Portal</h3>
+              <p class="app-summary">Interactive PACS portal and local GPU server for 28 open-weight 3D Brain MRI, Head CT, PET, and 4D fMRI foundation models — supporting volumetric embeddings, BrainAge, triage/report VLMs, 3D segmentation, synthesis, model comparison, and verified DOIs.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/Brain_Radiology_FM_Portal/" target="_blank" rel="noopener noreferrer">Launch Live App →</a>
+              <a class="btn-repo" href="https://github.com/prazg/Brain_Radiology_FM_Portal" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="app-card" data-accent="rose">
+            <div>
+              <h3 class="app-title">Histology FM Portal</h3>
+              <p class="app-summary">Graphical frontend and self-hosted GPU runner for 55 open-weight clinical and preclinical histology foundation models plus 39 oncology datasets — covering patch/slide encoders, zero-shot VLMs, virtual multiplex, spatial transcriptomics, and side-by-side encoder comparison.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/Histology_FM_Portal/" target="_blank" rel="noopener noreferrer">Launch Live App →</a>
+              <a class="btn-repo" href="https://github.com/prazg/Histology_FM_Portal" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="app-card" data-accent="rose">
+            <div>
+              <h3 class="app-title">Animal Pathology FM Portal</h3>
+              <p class="app-summary">Interactive portal and local runner for 16 preclinical, rodent (mouse/rat), GEMM oncology, and toxicologic pathology foundation models with VRAM hardware profiling, Brightfield/Darkfield viewers, and comparator.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/Animal_Pathology_FM_Portal/" target="_blank" rel="noopener noreferrer">Launch Live App →</a>
+              <a class="btn-repo" href="https://github.com/prazg/Animal_Pathology_FM_Portal" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="app-card" data-accent="cyan">
+            <div>
+              <h3 class="app-title">Remote DICOM Viewer</h3>
+              <p class="app-summary">Secure radiological DICOM reporting web platform featuring a 100% browser-local Zero-Upload DICOM Sandbox (built-in 48-slice Brain MRI + Head CT phantom, local .dcm folder reader, MPR reslicing, W/L presets, mm ruler, and tag inspector).</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/Remote_Dicom_Viewer/" target="_blank" rel="noopener noreferrer">Launch Live App →</a>
+              <a class="btn-repo" href="https://github.com/prazg/Remote_Dicom_Viewer" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+        </div>
+
+        <div id="apps-empty-state" class="empty-state" hidden>
+          <h3>No matching applications found</h3>
+          <p>Try broadening your search terms or clearing the active category/runtime filters.</p>
+          <button type="button" id="empty-reset-btn" class="btn-copy-primary">
+            Reset All Filters
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Radiogenomics & Glioblastoma Research Frameworks -->
+    <section id="radiogenomics" class="portal-section" aria-labelledby="radiogenomics-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">03 / Translational Neuro-Oncology &amp; Cancer Imaging</div>
+            <h2 id="radiogenomics-heading" class="section-title">
+              Radiogenomics &amp; Glioblastoma Research Frameworks
+            </h2>
+            <p class="section-subtitle">
+              Open-source deep learning, volumetric radiomics, synthetic MRI generation, and patient-reported outcome frameworks developed across King's College London, King's College Hospital, and The Francis Crick Institute.
+            </p>
+          </div>
+        </div>
+
+        <div id="radiogenomics-grid" class="compact-grid">
+          <article class="research-card">
+            <div>
+              <h3 class="research-title">DECIPHER-GBM</h3>
+              <p class="app-summary">Learning glioblastoma immune phenotypes from whole-brain MRI using a hybrid deep learning radiogenomic framework.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-repo" href="https://github.com/prazg/DECIPHER-GBM" target="_blank" rel="noopener noreferrer">GitHub Repository →</a>
+            </div>
+          </article>
+          <article class="research-card">
+            <div>
+              <h3 class="research-title">PRECISE_GBM</h3>
+              <p class="app-summary">Predictive Radiomics for Evaluation of Cancer Immune Signature in Glioblastoma integrating MRI radiomics, genomics, and immune signatures.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-repo" href="https://github.com/prazg/PRECISE_GBM" target="_blank" rel="noopener noreferrer">GitHub Repository →</a>
+            </div>
+          </article>
+          <article class="research-card">
+            <div>
+              <h3 class="research-title">PRECISE-GAN</h3>
+              <p class="app-summary">Synthetic FLAIR brain MRI generation pipeline using GANs.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-repo" href="https://github.com/prazg/PRECISE-GAN" target="_blank" rel="noopener noreferrer">GitHub Repository →</a>
+            </div>
+          </article>
+          <article class="research-card">
+            <div>
+              <h3 class="research-title">Deep-Features-Nifti-Network-DEN</h3>
+              <p class="app-summary">Deep Extraction Network (CNN) extracting deep volumetric features from NIfTI MRI scans of segmented glioblastomas.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-repo" href="https://github.com/prazg/Deep-Features-Nifti-Network-DEN" target="_blank" rel="noopener noreferrer">GitHub Repository →</a>
+            </div>
+          </article>
+          <article class="research-card">
+            <div>
+              <h3 class="research-title">NeuroOnc_PROMs</h3>
+              <p class="app-summary">Patient-reported outcome and experience measures (PROMs/PREMs) for neuro-oncology patients developed at King's College Hospital, London.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-repo" href="https://github.com/prazg/NeuroOnc_PROMs" target="_blank" rel="noopener noreferrer">GitHub Repository →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Independent Nepal Open-Science & Multi-Hazard Observatory -->
+    <section id="nepal-observatory" class="portal-section" aria-labelledby="nepal-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">04 / Public-Interest Earth Observation &amp; Digital Heritage</div>
+            <h2 id="nepal-heading" class="section-title">
+              Independent Nepal Open-Science &amp; Multi-Hazard Observatory
+            </h2>
+            <p class="section-subtitle">
+              Live open-access platforms supporting seismic &amp; multi-hazard early warning, High Mountain Asia cryosphere monitoring, and cultural heritage preservation.
+            </p>
+          </div>
+        </div>
+
+        <div id="nepal-grid" class="compact-grid">
+          <article class="research-card">
+            <div>
+              <h3 class="research-title">Nepal TRAYA</h3>
+              <p class="app-summary">Multi-Hazard Early Warning System for earthquakes, floods, and landslides across Nepal.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/Nepal_TRAYA/" target="_blank" rel="noopener noreferrer">Launch Live Portal →</a>
+              <a class="btn-repo" href="https://github.com/prazg/Nepal_TRAYA" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="research-card">
+            <div>
+              <h3 class="research-title">Nepal Quake Watch</h3>
+              <p class="app-summary">Live earthquake monitoring integrating USGS + NEMRC catalogues, ShakeMap intensity, and ward-level population/hospital exposure.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/Nepal_Quake_Watch/" target="_blank" rel="noopener noreferrer">Launch Live Portal →</a>
+              <a class="btn-repo" href="https://github.com/prazg/Nepal_Quake_Watch" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="research-card">
+            <div>
+              <h3 class="research-title">Nepal Cryosphere Inventory</h3>
+              <p class="app-summary">Open, rebuildable inventory of 4,480 glaciers and 1,429 glacial lakes in Nepal with ice velocity and outburst flood records.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/Nepal_Cryosphere_Inventory/" target="_blank" rel="noopener noreferrer">Launch Live Portal →</a>
+              <a class="btn-repo" href="https://github.com/prazg/Nepal_Cryosphere_Inventory" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="research-card">
+            <div>
+              <h3 class="research-title">Nepal Heritage Catalogue</h3>
+              <p class="app-summary">Searchable catalogue of Nepalese cultural objects, manuscripts, and archives held outside Nepal with repatriation tracking.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/Nepal_Heritage_Catalogue/" target="_blank" rel="noopener noreferrer">Launch Live Portal →</a>
+              <a class="btn-repo" href="https://github.com/prazg/Nepal_Heritage_Catalogue" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+          <article class="research-card">
+            <div>
+              <h3 class="research-title">HMA GLOF Dashboard</h3>
+              <p class="app-summary">Interactive review of glacial lake outburst floods across High Mountain Asia.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn-launch" href="https://prazg.github.io/GLOF_dashboard/" target="_blank" rel="noopener noreferrer">Launch Live Portal →</a>
+              <a class="btn-repo" href="https://github.com/prazg/GLOF_dashboard" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 05: 1-Click Suite Citation & Markdown Directory Exporter -->
+    <section id="cite-export" class="portal-section" aria-labelledby="cite-export-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">05 / Reproducible Open Science &amp; Attribution</div>
+            <h2 id="cite-export-heading" class="section-title">
+              1-Click Suite Citation &amp; Markdown Directory Exporter
+            </h2>
+            <p class="section-subtitle">
+              Copy a structured Markdown directory of all live applications and repositories for lab wikis, departmental handbooks, or teaching syllabi, or export a formal BibTeX entry.
+            </p>
+          </div>
+        </div>
+
+        <div class="exporter-panel">
+          <div class="exporter-toolbar">
+            <div id="export-tabs" class="export-tabs" role="tablist" aria-label="Export format selection">
+              <button
+                type="button"
+                id="export-tab-markdown"
+                class="export-tab-btn"
+                role="tab"
+                data-export-format="markdown"
+                aria-selected="true"
+                aria-controls="export-tabpanel"
+              >
+                Markdown Directory (Wiki / Syllabus)
+              </button>
+              <button
+                type="button"
+                id="export-tab-bibtex"
+                class="export-tab-btn"
+                role="tab"
+                data-export-format="bibtex"
+                aria-selected="false"
+                aria-controls="export-tabpanel"
+              >
+                BibTeX Citation
+              </button>
+              <button
+                type="button"
+                id="export-tab-plain"
+                class="export-tab-btn"
+                role="tab"
+                data-export-format="plain"
+                aria-selected="false"
+                aria-controls="export-tabpanel"
+              >
+                Plain-Text Reference
+              </button>
+            </div>
+
+            <div class="export-actions">
+              <span id="copy-status" class="copy-status" aria-live="polite"></span>
+              <button type="button" id="copy-export-btn" class="btn-copy-primary">
+                <span id="copy-export-label">Copy Markdown Directory</span>
+              </button>
+              <button type="button" id="download-export-btn" class="btn-download-secondary">
+                Download File
+              </button>
+            </div>
+          </div>
+
+          <pre id="export-tabpanel" class="export-preview-pre" role="tabpanel" aria-labelledby="export-tab-markdown" tabindex="0"><code id="export-code-preview"></code></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer & Non-SaMD Regulatory Governance Notice -->
+  <footer id="portal-footer" class="portal-footer">
+    <div class="container">
+      <div class="samd-notice" role="note" aria-label="Regulatory and clinical usage notice">
+        <h2 class="samd-notice-title">
+          Research &amp; Educational Open-Source Software — Non-SaMD Notice
+        </h2>
+        <p>
+          All web applications, volumetric &amp; RANO calculators, stereotactic planners, molecular classifiers,
+          clinical trial search heuristics, and foundation model runners hosted across
+          <strong>prazg.github.io</strong> are provided strictly for academic research, algorithmic benchmarking,
+          and medical education. They are <strong>not certified Software as a Medical Device (Non-SaMD)</strong>
+          and must not be used for primary clinical diagnosis, surgical navigation on patients, or unsupervised
+          treatment decisions. Browser-local sandboxes process NIfTI/DICOM data entirely in local memory with zero external upload.
+        </p>
+      </div>
+
+      <div class="footer-columns">
+        <div>
+          <h3 class="footer-heading">Dr Prajwal Ghimire (@prazg)</h3>
+          <p class="app-summary" style="margin-bottom: 0.65rem;">
+            Neurosurgeon-Scientist · Cancer AI &amp; Radiogenomics Researcher<br />
+            The Francis Crick Institute · King's College London (KCL-BMEIS) · King's College Hospital · NAAMII Nepal
+          </p>
+          <p class="app-summary" style="margin-bottom: 0;">
+            Location: London, UK · Correspondence:
+            <a href="mailto:prajwal.ghimire@crick.ac.uk">prajwal.ghimire@crick.ac.uk</a>
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Academic &amp; Research Profiles</h3>
+          <ul class="footer-links">
+            <li><a href="https://kclpure.kcl.ac.uk/portal/en/persons/prajwal-ghimire/" target="_blank" rel="noopener noreferrer">KCL Pure Research Portal</a></li>
+            <li><a href="https://kclpure.kcl.ac.uk/ws/portalfiles/portal/cv/b47f89d3-9947-4de3-957f-7c086e01768b?locale=en_GB" target="_blank" rel="noopener noreferrer">Curriculum Vitae (KCL Pure)</a></li>
+            <li><a href="https://github.com/prazg" target="_blank" rel="noopener noreferrer">GitHub (@prazg)</a></li>
+            <li><a href="https://linktr.ee/prazneuro" target="_blank" rel="noopener noreferrer">Linktree &amp; Articles (@prazneuro)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Scientific Outreach &amp; Channels</h3>
+          <ul class="footer-links">
+            <li><a href="https://linkedin.com/in/neuroPraz" target="_blank" rel="noopener noreferrer">LinkedIn (@neuroPraz)</a></li>
+            <li><a href="https://twitter.com/prazNeuro" target="_blank" rel="noopener noreferrer">X / Twitter (@prazNeuro)</a></li>
+            <li><a href="https://youtube.com/Dr.Prajwal.Ghimire" target="_blank" rel="noopener noreferrer">YouTube (Dr. Prajwal Ghimire)</a></li>
+            <li><a href="https://instagram.com/dr.praz.neuro" target="_blank" rel="noopener noreferrer">Instagram (@dr.praz.neuro)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Dr Prajwal Ghimire · Released under the MIT License.</span>
+        <span>Zero external CDNs · Zero analytics trackers · WCAG 2.1 AA Accessible Observatory</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

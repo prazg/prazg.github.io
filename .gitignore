@@ -1,0 +1,24 @@
+# OS & Editor metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Node / temporary artifacts
+node_modules/
+*.log
+tmp/
+dist/
